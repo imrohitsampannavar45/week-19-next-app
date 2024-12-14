@@ -42,22 +42,22 @@
 //     );
 // }
 
-import axios from "axios"
-export default async function User() {
+// import axios from "axios"
+// export default async function User() {
 
-    const response = await axios.get("https://week-13-offline.kirattechnologies.workers.dev/api/v1/user/details")
+//     const response = await axios.get("http://localhost:3000/api/v1/user/details")
 
-    await new Promise(r => setTimeout(r, 5000))
+//     await new Promise(r => setTimeout(r, 5000))
 
-    const data = response.data;
+//     const data = response.data;
 
-    console.log("request was sent");
+//     console.log("request was sent");
 
-    return <div>
-        user page
+//     return <div>
+//         user page
 
-        {data.name}
-        {data.email}
-    </div>
+//         {data.name}
+//         {data.email}
+//     </div>
 
-}
+// }
